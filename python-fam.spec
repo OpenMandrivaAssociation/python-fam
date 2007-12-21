@@ -10,6 +10,7 @@ License: GPL
 Group: Development/Python
 URL: http://python-fam.sourceforge.net/
 Requires: python
+BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: python-devel, fam-devel
 
 %description
