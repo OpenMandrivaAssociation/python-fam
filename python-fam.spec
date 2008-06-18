@@ -3,7 +3,7 @@
 Summary: Python FAM module
 Name: python-fam
 Version: 1.1.1
-Release: %mkrel 2
+Release: %mkrel 3
 Source0: http://prdownloads.sourceforge.net/python-fam/%{name}-%{version}.tar.bz2
 Patch0: python-fam-1.0.2-gamin.patch
 License: GPL
