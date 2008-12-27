@@ -3,15 +3,15 @@
 Summary: Python FAM module
 Name: python-fam
 Version: 1.1.1
-Release: %mkrel 3
+Release: %mkrel 4
 Source0: http://prdownloads.sourceforge.net/python-fam/%{name}-%{version}.tar.bz2
 Patch0: python-fam-1.0.2-gamin.patch
 License: GPL
 Group: Development/Python
 URL: http://python-fam.sourceforge.net/
-Requires: python
+%py_requires -d
 BuildRoot: %{_tmppath}/%{name}-buildroot
-BuildRequires: python-devel, fam-devel
+BuildRequires: fam-devel
 
 %description
 Python FAM is a wrapper module around libfam from the FAM project. It
