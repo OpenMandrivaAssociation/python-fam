@@ -3,7 +3,7 @@
 Summary:	Python FAM module
 Name:		python-fam
 Version:	1.1.1
-Release:	11
+Release:	12
 Patch1:		python-fam-1.1.1-fixcrash.patch
 License:	GPLv2
 Group:		Development/Python
