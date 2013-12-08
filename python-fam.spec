@@ -10,9 +10,8 @@ Group:		Development/Python
 Url:		http://python-fam.sourceforge.net/
 Source0:	http://prdownloads.sourceforge.net/python-fam/%{name}-%{version}.tar.bz2
 Patch0:		python-fam-1.0.2-gamin.patch
-# (fc) 1.1.1-5mdv fix crash (Debian)
 BuildRequires:	fam-devel
-%py_requires -d
+BuildRequires:  python-devel
 
 %description
 Python FAM is a wrapper module around libfam from the FAM project. It
