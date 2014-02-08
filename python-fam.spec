@@ -3,7 +3,7 @@
 Summary: Python FAM module
 Name: python-fam
 Version: 1.1.1
-Release: %mkrel 8
+Release: 9
 Source0: http://prdownloads.sourceforge.net/python-fam/%{name}-%{version}.tar.bz2
 Patch0: python-fam-1.0.2-gamin.patch
 # (fc) 1.1.1-5mdv fix crash (Debian)
