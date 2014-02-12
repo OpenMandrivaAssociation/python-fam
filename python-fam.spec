@@ -11,9 +11,8 @@ Patch1: python-fam-1.1.1-fixcrash.patch
 License: GPL
 Group: Development/Python
 URL: http://python-fam.sourceforge.net/
-%py_requires -d
-BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: fam-devel
+BuildRequires: python-devel
 
 %description
 Python FAM is a wrapper module around libfam from the FAM project. It
