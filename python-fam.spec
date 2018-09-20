@@ -1,7 +1,9 @@
+%define __requires_exclude /usr/bin/python2.2
+
 Summary:	Python FAM module
 Name:		python-fam
 Version:	1.1.1
-Release:	18
+Release:	19
 Patch1:		python-fam-1.1.1-fixcrash.patch
 License:	GPLv2
 Group:		Development/Python
