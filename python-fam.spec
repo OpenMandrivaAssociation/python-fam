@@ -1,17 +1,13 @@
-%define __requires_exclude /usr/bin/python2.2
-
 Summary:	Python FAM module
 Name:		python-fam
-Version:	1.1.1
-Release:	20
-Patch1:		python-fam-1.1.1-fixcrash.patch
+Version:	2.0.13
+Release:	1
 License:	GPLv2
 Group:		Development/Python
 Url:		http://python-fam.sourceforge.net/
-Source0:	http://prdownloads.sourceforge.net/python-fam/%{name}-%{version}.tar.bz2
-Patch0:		python-fam-1.0.2-gamin.patch
+Source0:	https://files.pythonhosted.org/packages/a8/8f/d500d7be5662bb2606f289c7d26d8c99125c4a4ca7cf39faa144f0d3a94f/fam-2.0.13.tar.gz
 BuildRequires:	fam-devel
-BuildRequires:  pkgconfig(python2)
+BuildRequires:  pkgconfig(python)
 
 %description
 Python FAM is a wrapper module around libfam from the FAM project. It
@@ -19,17 +15,15 @@ allows Python programs to monitor files and directories. An example
 script is included.
 
 %prep
-%setup -q
+%setup -qn fam-%{version}
 %apply_patches
-chmod 755 test.py
 
 %build
-%{__python2} setup.py build
+find . -name "*.py" -exec 2to3 -w {} \;
+%py_build
 
 %install
-%{__python2} setup.py install --root=%{buildroot}
+%py_install
 
 %files
-%doc test.py
-%{py2_platsitedir}/*
-
+%{python_sitelib}/*
