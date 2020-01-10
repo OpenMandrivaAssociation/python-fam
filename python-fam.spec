@@ -16,7 +16,7 @@ script is included.
 
 %prep
 %setup -qn fam-%{version}
-%apply_patches
+%autopatch -p1
 
 %build
 find . -name "*.py" -exec 2to3 -w {} \;
