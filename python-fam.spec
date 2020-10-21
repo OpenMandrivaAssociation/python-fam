@@ -1,3 +1,5 @@
+%define debug_package %nil
+
 Summary:	Python FAM module
 Name:		python-fam
 Version:	2.0.13
