@@ -3,7 +3,7 @@
 Summary:	Python FAM module
 Name:		python-fam
 Version:	2.2.11
-Release:	1
+Release:	2
 License:	GPLv2
 Group:		Development/Python
 Url:		http://python-fam.sourceforge.net/
