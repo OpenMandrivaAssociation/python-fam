@@ -6,7 +6,7 @@ Version:	2.2.11
 Release:	2
 License:	GPLv2
 Group:		Development/Python
-Url:		http://python-fam.sourceforge.net/
+Url:		https://python-fam.sourceforge.net/
 Source0:	https://files.pythonhosted.org/packages/a8/8f/d500d7be5662bb2606f289c7d26d8c99125c4a4ca7cf39faa144f0d3a94f/fam-%{version}.tar.gz
 BuildRequires:	fam-devel
 BuildRequires:  pkgconfig(python)
